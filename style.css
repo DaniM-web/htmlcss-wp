@@ -14,7 +14,6 @@ body{
 main{
   width: 80%;
   margin: 0 auto;
-  margin-top: 15px;
 }
 main::after{
   content: "";
@@ -23,15 +22,19 @@ main::after{
 }
 header{
 width: 80%;
-margin: 0 auto;
+margin: 25px auto 15px;
 }
 
-
+/* Link properties */
 a:link, a:visited {
-  text-decoration: none;
+ text-decoration: none;
 }
 
 a.linktitle{
+  color: #fff;
+}
+
+a.navlink{
   color: #fff;
 }
 
@@ -85,25 +88,39 @@ hgroup{
   background-size: cover;
   border: 12px solid white;
 }
+
+/* MENU DI NAVIGAZIONE */
 nav{
-  /* debug start */
+  height: 55px;
   background-color: #504741;
-  height: 80px;
-  /* debug end */
-  /* position: relative; */
+  position: relative;
 }
 
-/* ul{
+.navmenu li{
+  height: 100%;
+  display: inline-block;
+  padding: 4% 8px 0 8px;
+}
+
+.navitem-a, .navitem-b {
+  border-right: 1px solid rgba(0, 0, 0, .4);
+}
+
+.navitem-a:last-child {
+  border-right: none;
+}
+
+.navmenu {
+  height:100%;
   position: absolute;
   top: 50%;
-  left: 40%;
-  transform: translate(-50%, -40%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-li{
-  display: inline-block;
-} */
-
+.navitem-a:hover, .navitem-b:hover{
+  background: rgba(0, 0, 0, .4);
+}
 
 #c-block{
   /* debug start */
@@ -114,6 +131,7 @@ width: 50%;
 float: left;
 }
 
+/* Right aside properties */
 .r-box{
   width: 30%;
   float: right;
@@ -132,21 +150,29 @@ span.boldesttag{
 }
 
 input[name="go"]{
-  width: 80px;
+  width: 20%;
   height: 40px;
   color: #fff;
-  background-color: #504741;
+  background-color: #706760;
   border: 0.5px solid black;
   cursor: pointer;
-  margin-left: 8px;
-}
-input[name="search"]{
-padding: 5px;
-height: 40px;
-font-size: 18px;
-border: 1px solid rgba(0, 0, 0, 0.12);
+  margin-left: 5%;
+  border-radius: 4px;
 }
 
+input[name="search"]{
+padding: 5px;
+width: 60%;
+height: 40px;
+font-size: 18px;
+border: 1px solid #706760;
+}
+
+input[name="go"]:hover {
+  background-color: #504741;
+}
+
+/* left Aside properties */
 .l-box{
   width: 20%;
   float: left;
@@ -154,13 +180,22 @@ border: 1px solid rgba(0, 0, 0, 0.12);
   }
 
 .l-box div, .r-box div {
+  width: 100%;
   background-color: white;
   margin-bottom: 20px;
-  padding: 5% 0 5% 12%;
+  padding: 5% 15% 5% 10%;
 }
 
 ul.asidelist, ul.asidelist li{
   list-style: none;
   margin: 6px 0;
   font-size: 18px;
+}
+
+a.metalink:hover {
+  text-decoration: underline;
+}
+
+.asidelist li:hover {
+  box-shadow: 0 3px 5px inset ;
 }
