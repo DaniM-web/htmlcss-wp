@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: brown;
+  color: #666666;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  font-size: 1em;
+}
+main{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+main::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+header{
+width: 80%;
+margin: 0 auto;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a.metalink{
+  color: #99cc33;
+}
+
+.asidetitle{
+  font-size: 1.3em;
+  margin-bottom: 12px;
+}
+
+footer{
+  /* debug start */
+  background-color: black;
+  height: 200px;
+  /* debug end */
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+hgroup{
+  text-align: center;
+  padding-top: 3%;
+  color: #FFF;
+  line-height: 1.6;
+}
+
+#title {
+   font-family: 'Montserrat';
+   font-size: 3em;
+   letter-spacing: -1px;
+   text-decoration: none;
+}
+
+.site-description {
+  font-family: 'Montserrat';
+  font-size: 1.2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+#banner {
+  height: 250px;
+  background-image: url("img/headerbg.jpg");
+  background-position: center top;
+  background-size: cover;
+  border: 12px solid white;
+}
+nav{
+  /* debug start */
+  background-color: #504741;
+  height: 80px;
+  /* debug end */
+  /* position: relative; */
+}
+
+/* ul{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -40%);
+}
+
+li{
+  display: inline-block;
+} */
+
+
+#c-block{
+  /* debug start */
+background-color: blue;
+height: 250px;
+/* debug end */
+width: 50%;
+float: left;
+}
+
+.r-box{
+  width: 30%;
+  float: right;
+  padding-left: 3%;
+}
+
+.r-box div{
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+
+input[name="go"]{
+  width: 80px;
+  height: 40px;
+  color: #fff;
+  background-color: #504741;
+  border: 0.5px solid black;
+  cursor: pointer;
+  margin-left: 8px;
+}
+input[name="search"]{
+padding: 4px;
+height: 40px;
+font-size: 18px;
+border: 2px solid lightblue;
+}
+
+.l-box{
+  width: 20%;
+  float: left;
+  padding-right: 3%;
+  }
+
+.l-box div, .r-box div {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 5% 0 5% 5%;
+}
+
+ul.pages, ul.pages li{
+  list-style: none;
+  margin: 6px 0;
+  font-size: 20px;
+}
