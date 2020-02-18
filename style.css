@@ -41,6 +41,9 @@ a.navlink{
 a.metalink{
   color: #99cc33;
 }
+a.linkcentral{
+  color: #504741;
+}
 
 .asidetitle{
   font-size: 1.3em;
@@ -99,11 +102,12 @@ nav{
 .navmenu li{
   height: 100%;
   display: inline-block;
-  padding: 4% 8px 0 8px;
+  padding: 4% 15px 0 8px;
 }
 
 .navitem-a, .navitem-b {
   border-right: 1px solid rgba(0, 0, 0, .4);
+  font-size: 1.1em;
 }
 
 .navitem-a:last-child {
@@ -122,13 +126,18 @@ nav{
   background: rgba(0, 0, 0, .4);
 }
 
+/* Blocco centrale */
+
 #c-block{
-  /* debug start */
-background-color: blue;
-height: 250px;
-/* debug end */
+background-color: #fff;
+padding: 1.5%;
 width: 50%;
 float: left;
+}
+
+img{
+  max-width: 100%;
+  padding-top: 5%;
 }
 
 /* Right aside properties */
